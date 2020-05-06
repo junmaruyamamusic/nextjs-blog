@@ -15,6 +15,8 @@ export default function Post({postData}){
                 <div className={utilStyles.lightText}></div>
                     <Date dateString={postData.date} />
                 <div/>
+                <div/>
+                <img src={`/images/${postData.imageFileName}`} alt="Image" />
                 <div dangerouslySetInnerHTML={{ __html:postData.contentHtml}} />
             </article>
         </Layout>
